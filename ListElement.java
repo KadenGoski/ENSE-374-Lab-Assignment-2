@@ -101,7 +101,7 @@ public class ListElement {
 
     public static void main(String[] args)
     {
-        /* Start with the empty list */
+
         ListElement list = new ListElement();
 
         list.addElement(6);
@@ -109,13 +109,14 @@ public class ListElement {
         list.addElement(3);
         list.addElement(2);
         list.addElement(1);
+        System.out.println("\nElement at index 4 is:");
         list.getElement(4);
-        System.out.println("\nCreated Linked list is: ");
+        System.out.println("\nLinked list is: ");
         list.printLinkedListHead();
 
         list.deleteElement(4);  // Delete node at position 5 -> first position is 0.
 
-        System.out.println("\nLinked List after Deletion at position 5: ");
+        System.out.println("\nLinked List after Deletion at index 4: ");
         list.printLinkedListHead();
     }
 }
